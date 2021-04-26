@@ -53,9 +53,9 @@ function CreateArea(props) {
           onClick={handleClick}
           value={note.content}
           placeholder="Take a note..."
-          rows={contentClicked ? "3" : "1"}
+          rows={contentClicked ? 3 : 1}
         />
-        <Zoom in={contentClicked ? true : false}>
+        <Zoom in={contentClicked}>
           <Fab onClick={submitNote}>
             <AddIcon />
           </Fab>
